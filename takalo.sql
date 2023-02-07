@@ -42,3 +42,19 @@ create table if not exists Photo (
     foreign key (objet) references Objet (idObjet)
 ); 
 
+create table historique(
+    idEchange int PRIMARY KEY AUTO_INCREMENT,
+    utilisateur1 int,
+    objet1 int,
+    utilisateur2 int,
+    objet2 int,
+    etat int, 
+    dateHeure datetime,
+    Foreign Key (utilisateur1) REFERENCES Connection(idUtilisateur),
+    Foreign Key (objet1) REFERENCES objet(idObjet),
+    Foreign Key (utilisateur2) REFERENCES Connection(idUtilisateur),
+    Foreign Key (objet2) REFERENCES objet(idObjet)
+);
+
+--0 en attente, 1 accepte, 2 refuser
+
