@@ -9,7 +9,7 @@ class Categorie_model extends CI_Model{
     }
 
     public function getAll(){
-        $query="SELECT * FROM categorie";
+        $query=$this->db->query('SELECT * FROM categorie');
         $categories=array();
         foreach($query->result_array() as $row)
         {
@@ -17,4 +17,17 @@ class Categorie_model extends CI_Model{
         }
         return $categories;
     }
+
+    public function updateCategorie($id, $nom){
+        $sql= "UPDATE Categorie SET Nom='$nom' WHERE idcategorie='".$id."'";
+        $sql= sprintf($sql, $this->db->escape($id));
+        $this->db->query($sql);
+    }
+
+    public function delete_categorie($id){
+        $sql="DELETE FROM Categorie Where idcategorie='".$id."'";
+        $sql= sprintf($sql, $this->db->escape($id));
+        $this->db->query($sql);
+    }
 }
+?>
