@@ -30,3 +30,4 @@ class Categorie_model extends CI_Model{
         $this->db->query($sql);
     }
 }
+?>

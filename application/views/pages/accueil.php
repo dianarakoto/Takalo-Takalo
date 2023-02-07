@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+
     <div id="insert-catego">
         <h1>inserer catgorie</h1>
         <form action="<?php echo base_url('accueil/ajout_categorie'); ?>" method="post">
@@ -15,5 +16,6 @@
         </form>
     </div>
     <a href="<?php echo base_url('accueil/menu');?>" >Retour au menu</a>
+
 </body>
 </html>

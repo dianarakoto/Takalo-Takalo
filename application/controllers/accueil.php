@@ -6,8 +6,6 @@ class accueil extends CI_Controller {
         $this->load->view('pages/loginAdmin');
         $this->load->view('pages/footer');
     }
-<<<<<<< Updated upstream
-=======
 
     public function check_User(){
         $this->load->model('login_model');
@@ -108,6 +106,5 @@ class accueil extends CI_Controller {
         $this->load->view('pages/accueil');
     }
 
->>>>>>> Stashed changes
 }
 ?>
