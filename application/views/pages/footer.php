@@ -27,9 +27,9 @@
                 <div class="col-sm-6 col-md-3 item">
                     <h3>Createur</h3>
                     <ul>
-                        <li><a href="#">Diana</a></li>
-                        <li><a href="#">Manoa</a></li>
-                        <li><a href="#">Anouchka</a></li>
+                        <li><a href="#">RAKOTOMAHARO Diana ETU002000</a></li>
+                        <li><a href="#">RANDRIANARISON HARINJATO Manoa Ny Avo Ampoina ETU002041</a></li>
+                        <li><a href="#">ANDRIANARISOA Ornelly Anouchka ETU001936</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 item text">

@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    HEllloooooo
+    <div id="insert-catego">
+        <h1>inserer catgorie</h1>
+        <form action="<?php echo base_url('accueil/ajout_categorie'); ?>" method="post">
+            <p><input type="text" placeholder="Inserer categorie" name="categorie"></p>
+            <p><input type="submit" value="VALIDER"></p>
+        </form>
+    </div>
+    <a href="<?php echo base_url('accueil/menu');?>" >Retour au menu</a>
 </body>
 </html>

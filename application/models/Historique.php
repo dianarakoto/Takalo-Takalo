@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Historique extends CI_Controller {
+class Historique extends CI_Model {
     public function allOwner($objet){
-        $query=$this->db->query('SELECT * FROM historique WHERE objet1='$objet'');
+        $query=$this->db->query('SELECT * FROM historique WHERE objet1='.$objet.'');
         $objects=array();
         foreach($query->result_array() as $row){
             array_push($objects, $row);

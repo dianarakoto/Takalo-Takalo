@@ -74,11 +74,11 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => 'sql210.epizy.com',
-	'username' => 'epiz_33544750',
-	'password' => 'a4qoHuFyky',
-	'database' => 'epiz_33544750_takalo',
+	'dsn'	   => '',
+	'hostname' => 'sql209.epizy.com',
+	'username' => 'epiz_33517020',
+	'password' => '6hoi445aqYz2E',
+	'database' => 'epiz_33517020_takalo',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -94,3 +94,4 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+?>

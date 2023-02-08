@@ -16,11 +16,10 @@
 </head>
 
 <body>
-    <section class="login-clean"></section>
     <section class="login-dark" style="background: #2b3541;">
         <form method="post" action="<?php echo base_url('accueil/check_User'); ?>" style="margin-top: -152px;font-size: 19px;border-style: none;">
             <h2 class="sr-only">Login Form</h2><small class="form-text text-muted" style="font-size: 31.8px;">TAKALO-TAKALO</small>
-            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" value="diana@gmail.com"></div>
+            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" value="rakoto@gmail.com"></div>
             <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password" value="123"></div>
             <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button>
             </div><a class="forgot" href="<?php echo base_url('accueil/connectAdmin'); ?>">Connect as Admin</a>

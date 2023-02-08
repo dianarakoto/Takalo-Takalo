@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Utilisateur extends CI_Controller {
+class Utilisateur extends CI_Model {
     public function userSigned(){
         $query=$this->db->query('SELECT * FROM Connection WHERE isadmin=false');
         $objects=array();

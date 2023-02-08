@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Objets extends CI_Controller {
+class Objets extends CI_Model {
     public function getObjetUser($user){
-        $query=$this->db->query('SELECT * FROM objet WHERE proprietaire='$user'');
+        $query=$this->db->query('SELECT * FROM objet WHERE proprietaire='.$user.'');
         $objects=array();
         foreach($query->result_array() as $row){
             array_push($objects, $row);
@@ -18,8 +18,8 @@ class Objets extends CI_Controller {
     }
 
     public function insertObjet($nom, $categorie, $proprietaire, $description, $prix){
-        $query=$this->db->query('INSERT INTO objet VALUES (null, %s, %s, %s, %s, %s)');
-        $query=sprintf($query, $this->db->escape($nom), $this->db->escape($categorie), $this->db->escape($proprietaire), $this->db->escape($description), $this->db->escape($prix), $this->db->escape($idObjet));
+        $query="INSERT INTO Objet VALUES (null, %s, %s, %s, %s, %s)";
+        $query=sprintf($query, $this->db->escape($nom), $this->db->escape($categorie), $this->db->escape($proprietaire), $this->db->escape($description), $this->db->escape($prix));
         $this->db->query($query);
     }
 
@@ -30,7 +30,7 @@ class Objets extends CI_Controller {
     }
 
     public function listProposition($user){
-        $query=$this->db->query('SELECT * FROM historique WHERE utilisateur2='$user'');
+        $query=$this->db->query('SELECT * FROM historique WHERE utilisateur2='.$user.'');
         $objects=array();
         foreach($query->result_array() as $row){
             array_push($objects, $row);

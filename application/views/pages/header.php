@@ -15,10 +15,7 @@
     <nav class="navbar navbar-light navbar-expand-lg navigation-clean-button" style="background: var(--bs-gray-dark);">
         <div class="container"><a class="navbar-brand" href="#" style="border-color: var(--bs-body-bg);color: var(--bs-gray-200);">Takalo-Takalo</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                </ul><i class="fa fa-star"></i><span class="navbar-text actions"> <a class="login" href="#" style="font-size: 22px;color: var(--bs-light);">Utilisateur</a><a class="btn btn-light action-button" role="button" href="#">Sign Up</a></span>
+                <a class="btn btn-light action-button" role="button" href="<?php echo base_url('accueil/logout') ?>">Se deconnecter</a>
             </div>
         </div>
     </nav>
